@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thammasat University Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <div class="logo">
+                <img src="img/tu_logo.png" alt="" width="100" height="100">
+            </div>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="button-container">
+                    <button type="submit" class="login-btn">Login</button>
+                    <button type="button" class="hello-btn" onclick="call_REST_API_Hello()">Hello</button>
+                </div>
+                <p id="message"></p>
+            </form>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
