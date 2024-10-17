@@ -38,20 +38,3 @@ function submitLogin(event) {
   }
 
 
-function call_REST_API_Hello() {
-    const username = document.getElementById('username').value;
-    const password = document.getElementById('password').value;
-
-    const url = (
-        'http://localhost:8081/services/hello?' +
-        new URLSearchParams({ myName: username, lastName: password}).toString()
-      );
-    
-    fetch(url)
-    .then(response => response.text())
-    .then(data => {
-        console.log("Data returned from REST API:", data); 
-        document.getElementById('message').innerText = data;
-    })
-    .catch(error => console.error('Error:', error));
-}
